@@ -10,39 +10,38 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   base: '/',
-  projects: {
+ projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: true,
       header: 'Github Projects',
-      mode: 'manual', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects:  [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
       },
       manual: {
-  projects: [
-    'Tuff-Tech-coder/Business-Directory-Scraper',
-    'Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator',
-    'Tuff-Tech-coder/Excel-CSV-File-Merger',
-    'Tuff-Tech-coder/Real-Estate-Listings-Scraper',
-    'Tuff-Tech-coder/Amazon-Price-Tracker',
-    'Tuff-Tech-coder/AI-Based-PDF-summarizer',
-  ],
-},
+        projects: [
+          'Tuff-Tech-coder/Business-Directory-Scraper',
+          'Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator',
+          'Tuff-Tech-coder/Excel-CSV-File-Merger',
+          'Tuff-Tech-coder/Real-Estate-Listings-Scraper',
+          'Tuff-Tech-coder/Amazon-Price-Tracker',
+          'Tuff-Tech-coder/AI-Based-PDF-summarizer',
+        ],
+      },
+    },
     external: {
       header: 'Featured',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: 'Listing Engine',
           description:
             'Describe a product once; generates marketplace-ready listings for eBay, Etsy, and Amazon KDP. One product model, a single LLM pass, per-platform adapters. Working prototype.',
-          imageUrl:
-            '/listing-engine-hero.png',
+          imageUrl: '/listing-engine-hero.png',
           link: 'https://github.com/Tuff-Tech-coder/Listing-Engine',
         },
       ],
