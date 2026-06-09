@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -24,10 +24,15 @@ const CONFIG = {
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: [Tuff-Tech-coder/Listing-Engine, Tuff-Tech-coder/Business-Directory-Scraper, Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator, Tuff-Tech-coder/Excel-CSV-File-Merger, Tuff-Tech-coder/Real-Estate-Listings-Scraper, Tuff-Tech-coder/Amazon-Price-Tracker, Tuff-Tech-coder/AI-Based-PDF-summarizer], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
-    },
+  projects: [
+    'Tuff-Tech-coder/Business-Directory-Scraper',
+    'Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator',
+    'Tuff-Tech-coder/Excel-CSV-File-Merger',
+    'Tuff-Tech-coder/Real-Estate-Listings-Scraper',
+    'Tuff-Tech-coder/Amazon-Price-Tracker',
+    'Tuff-Tech-coder/AI-Based-PDF-summarizer',
+  ],
+},
     external: {
       header: 'Featured',
       // To hide the `External Projects` section, keep it empty.
@@ -39,14 +44,6 @@ const CONFIG = {
           imageUrl:
             '/listing-engine-hero.png',
           link: 'https://github.com/Tuff-Tech-coder/Listing-Engine',
-        },
-        {
-          title: 'Project Name',
-          description:
-            '',
-          imageUrl:
-            '',
-          link: 'https://example.com',
         },
       ],
     },
