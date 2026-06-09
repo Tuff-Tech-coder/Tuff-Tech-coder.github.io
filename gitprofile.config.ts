@@ -81,7 +81,7 @@ const CONFIG = {
       position: 'Owner-Operator',
       from: 'December 2024',
       to: 'February 2026',
-      companyLink: ',
+      companyLink: '',
     },
     {
       company: 'Company Name',
