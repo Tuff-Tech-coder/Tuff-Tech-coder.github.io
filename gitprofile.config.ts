@@ -83,22 +83,8 @@ const CONFIG = {
       to: 'February 2026',
       companyLink: '',
     },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+
   educations: [
     {
       institution: 'North Montco Technical Career Center', degree: 'Internet Technologies, Certificate of Competency', from: '2014', to: '2017' ,
