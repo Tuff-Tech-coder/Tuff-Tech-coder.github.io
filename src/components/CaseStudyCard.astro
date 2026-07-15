@@ -1,0 +1,13 @@
+---
+import type { CaseStudy } from '../data/site';
+
+interface Props { study: CaseStudy }
+const { study } = Astro.props;
+---
+
+<article class="card work-card">
+  <p class="eyebrow">{study.eyebrow}</p>
+  <h3><a href={`/work/${study.slug}/`}>{study.title}</a></h3>
+  <p>{study.summary}</p>
+  <a class="text-link" href={`/work/${study.slug}/`}>Read case study <span aria-hidden="true">→</span></a>
+</article>
