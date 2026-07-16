@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<BaseLayout title="Project process | Tuff Tech" description="A milestone-based implementation process from fit and discovery through source delivery, recorded handoff, and optional maintenance.">
+  <header class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">Process</p>
+      <h1>Enough structure to make progress visible.</h1>
+      <p class="lede">The process is designed for scoped technical work: make the unknowns explicit, demonstrate working increments, and leave behind source another developer can inspect.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="shell split">
+      <h2>From brief to handoff</h2>
+      <ol class="numbered-list">
+        <li><div class="stack"><h3>Fit & context</h3><p>Review the goal, current inputs, environment, constraints, dependencies, and the team’s definition of a useful outcome.</p></div></li>
+        <li><div class="stack"><h3>Technical discovery</h3><p>Identify edge cases, permissions, platform limits, integration risks, and questions that could materially change the scope.</p></div></li>
+        <li><div class="stack"><h3>Milestone proposal</h3><p>Define deliverables, acceptance criteria, exclusions, review points, and what the client or agency must provide.</p></div></li>
+        <li><div class="stack"><h3>Implementation & demos</h3><p>Build in reviewable increments, keep source in Git, surface tradeoffs early, and demonstrate behavior against representative inputs.</p></div></li>
+        <li><div class="stack"><h3>Validation & handoff</h3><p>Run agreed checks, deliver documentation and source, record a walkthrough, and note known limitations or future work.</p></div></li>
+        <li><div class="stack"><h3>Maintenance, if useful</h3><p>Handle fixes, environment changes, or small extensions under a separately defined support arrangement.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="shell">
+      <div class="section-heading"><p class="eyebrow">Communication defaults</p><h2>Clear ownership at every review point.</h2></div>
+      <div class="principles">
+        <div class="principle"><h3>Written decisions</h3><p>Assumptions, tradeoffs, and scope changes are recorded so the handoff does not depend on memory.</p></div>
+        <div class="principle"><h3>Real examples</h3><p>Testing uses representative inputs and edge cases supplied or approved by the team.</p></div>
+        <div class="principle"><h3>No hidden dependency</h3><p>Paid services, credentials, hosting, and ongoing operational needs are disclosed before they become blockers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+</BaseLayout>

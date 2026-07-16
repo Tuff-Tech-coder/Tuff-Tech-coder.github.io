@@ -1,0 +1,20 @@
+---
+interface Props {
+  title?: string;
+  body?: string;
+}
+
+const {
+  title = 'Need a dependable implementation partner?',
+  body = 'Send the problem, constraints, and desired handoff. Tuff Tech will reply with fit, questions, and a practical next step.',
+} = Astro.props;
+---
+
+<section class="cta-block" aria-labelledby="cta-heading">
+  <div>
+    <p class="eyebrow">Start a conversation</p>
+    <h2 id="cta-heading">{title}</h2>
+    <p>{body}</p>
+  </div>
+  <a class="button button-light" href="/contact/">Discuss a project <span aria-hidden="true">→</span></a>
+</section>

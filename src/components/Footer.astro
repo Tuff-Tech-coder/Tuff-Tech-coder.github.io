@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+---
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <div>
+      <p class="footer-name">{site.name}</p>
+      <p>Technical implementation for agencies and indie game teams.</p>
+    </div>
+    <div class="footer-links" aria-label="External links">
+      <a href={`mailto:${site.email}`}>Email</a>
+      <a href={site.github}>GitHub</a>
+    </div>
+  </div>
+</footer>

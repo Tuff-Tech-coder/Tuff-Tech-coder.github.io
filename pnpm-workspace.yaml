@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+storeDir: .pnpm-store
+virtualStoreDir: node_modules/.pnpm
+packageImportMethod: copy
+nodeLinker: hoisted

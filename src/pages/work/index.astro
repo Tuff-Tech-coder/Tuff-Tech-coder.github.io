@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CaseStudyCard from '../../components/CaseStudyCard.astro';
+import CTA from '../../components/CTA.astro';
+import { caseStudies } from '../../data/site';
+---
+
+<BaseLayout title="Selected work and case studies | Tuff Tech" description="Inspectable automation and data-workflow case studies with problems, constraints, responsibilities, solutions, reliability notes, and verifiable outcomes.">
+  <header class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">Work / case studies</p>
+      <h1>Evidence over inventory.</h1>
+      <p class="lede">A focused selection of public work, explained through the problem, constraints, implementation responsibility, reliability choices, and what can be verified today.</p>
+      <p class="placeholder"><strong>Note:</strong> These initial studies are independently developed public projects. They are not represented as paid client work.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="shell work-grid">
+      {caseStudies.map((study) => <CaseStudyCard study={study} />)}
+    </div>
+  </section>
+
+  <CTA title="Have a similar operational problem?" body="A useful first message includes representative inputs, the desired output, exceptions you already know about, and who will own the system after handoff." />
+</BaseLayout>

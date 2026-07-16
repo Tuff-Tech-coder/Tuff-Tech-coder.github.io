@@ -1,0 +1,33 @@
+---
+import { site } from '../data/site';
+
+const pathname = Astro.url.pathname;
+const links = [
+  { href: '/automation/', label: 'Agency automation' },
+  { href: '/game-development/', label: 'Game development' },
+  { href: '/work/', label: 'Work' },
+  { href: '/process/', label: 'Process' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="shell header-inner">
+    <a class="brand" href="/" aria-label={`${site.name}, home`}>
+      <span class="brand-mark" aria-hidden="true">{site.shortName}</span>
+      <span>{site.name}</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        {links.map((link) => (
+          <li>
+            <a href={link.href} aria-current={pathname.startsWith(link.href) ? 'page' : undefined}>
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
