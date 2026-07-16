@@ -1,6 +1,6 @@
-# Daniel Alvarado — business portfolio
+# Tuff Tech — service website
 
-A focused, business-facing static portfolio for agency automation subcontracting and indie game-development contracting. It replaces the previous GitProfile/React implementation with Astro and TypeScript.
+A focused, business-facing static service website for agency automation subcontracting and indie game-development contracting. It replaces the previous GitProfile/React implementation with Astro and TypeScript.
 
 ## Architecture
 
@@ -63,4 +63,4 @@ Every content placeholder is visibly marked with `PLACEHOLDER` on the relevant p
 - exact contribution notes and technical breakdowns for each game project;
 - timezone, normal inquiry response window, preferred meeting method, and contracting region.
 
-The three initial case studies are explicitly presented as public personal projects. Update that status only when there is permission and evidence to describe a real client engagement.
+The three initial case studies are explicitly presented as independently developed public projects. Update that status only when there is permission and evidence to describe a real client engagement.

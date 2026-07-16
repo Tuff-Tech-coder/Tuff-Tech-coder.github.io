@@ -1,9 +1,8 @@
 export const site = {
-  name: 'Daniel Alvarado',
-  shortName: 'DA',
+  name: 'Tuff Tech',
+  shortName: 'TT',
   email: 'djalvarado3@gmail.com',
   github: 'https://github.com/Tuff-Tech-coder',
-  linkedin: 'https://www.linkedin.com/in/daniel-alvarado-080105148/',
 };
 
 export type CaseStudy = {
@@ -138,6 +137,6 @@ export const caseStudies: CaseStudy[] = [
       'Setup and architecture documentation',
     ],
     outcome:
-      'Verifiable in the public repository: the sample command produces platform-shaped output through the deterministic template backend. This is identified as a personal working prototype, not paid client work.',
+      'Verifiable in the public repository: the sample command produces platform-shaped output through the deterministic template backend. This is identified as an independently developed working prototype, not paid client work.',
   },
 ];
