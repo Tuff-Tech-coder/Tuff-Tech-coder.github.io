@@ -22,7 +22,7 @@ A focused, business-facing static portfolio for agency automation subcontracting
 
 ## Local development
 
-Requirements: Node.js 20 or newer with Corepack enabled (or pnpm installed).
+Requirements: Node.js 24 or newer with Corepack enabled (or pnpm installed).
 
 ```bash
 corepack enable
