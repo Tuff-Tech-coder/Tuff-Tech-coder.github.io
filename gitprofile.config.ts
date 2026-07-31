@@ -49,7 +49,7 @@ const CONFIG = {
   },
   seo: { title: 'Tuff-Tech-coder — AI Automation & Python', description: '', imageURL: '' },
   social: {
-    linkedin: 'https://www.linkedin.com/in/daniel-alvarado-080105148/',
+    linkedin: '',
     x: '',
     mastodon: '',
     researchGate: '',
@@ -88,12 +88,6 @@ const CONFIG = {
   educations: [
     {
       institution: 'North Montco Technical Career Center', degree: 'Internet Technologies, Certificate of Competency', from: '2014', to: '2017' ,
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
     },
   ],
  
