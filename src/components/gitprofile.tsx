@@ -81,7 +81,14 @@ const GitProfile = ({ config }: { config: Config }) => {
         });
         const repoData = repoResponse.data;
 
-        return repoData.items;
+        // GitHub's search returns "best match" order; keep the config order.
+        const order = sanitizedConfig.projects.github.manual.projects.map((p) =>
+          p.toLowerCase(),
+        );
+        const rank = (r: { full_name: string }) =>
+          order.indexOf(r.full_name.toLowerCase());
+
+        return [...repoData.items].sort((a, b) => rank(a) - rank(b));
       }
     },
     [

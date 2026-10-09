@@ -10,7 +10,7 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   base: '/',
- projects: {
+  projects: {
     github: {
       display: true,
       header: 'Github Projects',
@@ -25,11 +25,12 @@ const CONFIG = {
       },
       manual: {
         projects: [
-          'Tuff-Tech-coder/Business-Directory-Scraper',
-          'Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator',
-          'Tuff-Tech-coder/Excel-CSV-File-Merger',
+          // Shown in this order, strongest first.
           'Tuff-Tech-coder/Real-Estate-Listings-Scraper',
+          'Tuff-Tech-coder/Business-Directory-Scraper',
+          'Tuff-Tech-coder/Excel-CSV-File-Merger',
           'Tuff-Tech-coder/Amazon-Price-Tracker',
+          'Tuff-Tech-coder/Google-Sheets-Auto-Report-Generator',
           'Tuff-Tech-coder/AI-Based-PDF-summarizer',
         ],
       },
@@ -40,14 +41,20 @@ const CONFIG = {
         {
           title: 'Listing Engine',
           description:
-            'Describe a product once; generates marketplace-ready listings for eBay, Etsy, and Amazon KDP. One product model, a single LLM pass, per-platform adapters. Working prototype.',
+            'One LLM call, listings for every marketplace. Per-platform adapters validate the output against real eBay, Etsy and Amazon KDP limits. Runs on Anthropic, Ollama or an offline backend. 44 tests.',
           imageUrl: '/listing-engine-hero.png',
           link: 'https://github.com/Tuff-Tech-coder/Listing-Engine',
         },
       ],
     },
   },
-  seo: { title: 'Tuff-Tech-coder — AI Automation & Python', description: '', imageURL: '' },
+  seo: {
+    title:
+      'Tuff Tech | Python Developer: Data Pipelines, Automation & LLM Tooling',
+    description:
+      'Python developer building data-extraction pipelines, ETL and reporting jobs, and LLM tooling. Tested, CI-backed projects that handle messy real-world input.',
+    imageURL: 'https://tuff-tech-coder.github.io/og-image.png',
+  },
   social: {
     linkedin: '',
     x: '',
@@ -71,10 +78,21 @@ const CONFIG = {
     email: 'djalvarado3@gmail.com',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
-  skills:  ['Python', 'pandas', 'NumPy', 'BeautifulSoup', 'Playwright', 'Docker', 'SQL', 'LangChain', 'Ollama', 'LLMs'],
+  skills: [
+    'Python',
+    'GDScript',
+    'pandas',
+    'openpyxl',
+    'BeautifulSoup',
+    'Playwright',
+    'pytest',
+    'GitHub Actions',
+    'Anthropic API',
+    'Ollama',
+    'Transformers',
+  ],
   experiences: [
     {
       company: 'Tuff Prints',
@@ -87,10 +105,13 @@ const CONFIG = {
 
   educations: [
     {
-      institution: 'North Montco Technical Career Center', degree: 'Internet Technologies, Certificate of Competency', from: '2014', to: '2017' ,
+      institution: 'North Montco Technical Career Center',
+      degree: 'Internet Technologies, Certificate of Competency',
+      from: '2014',
+      to: '2017',
     },
   ],
- 
+
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
